@@ -1,14 +1,9 @@
-import React from 'react'
-import "../TabSwitcher/TabSwitcher.css"
+import React from "react";
+import "../TabSwitcher/TabSwitcher.css";
+import BasicTable from "../Table/Table";
 
 function Pending() {
-  return (
-    <div class="tab">
-        <div class="text">
-            <div class="category">First Tab</div>
-        </div>
-    </div>
-  )
+  return <BasicTable />;
 }
 
-export default Pending
+export default Pending;
