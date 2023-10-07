@@ -1,14 +1,8 @@
-import React from 'react'
-import "../TabSwitcher/TabSwitcher.css"
+import React from "react";
+import "../TabSwitcher/TabSwitcher.css";
+import BasicTable from "../Table/BasicTable";
 
 function Approved() {
-  return (
-    <div class="tab">
-        <div class="text">
-            <div class="category">Second Tab</div>
-        </div>
-    </div>
-  )
 }
 
-export default Approved
+export default Approved;
