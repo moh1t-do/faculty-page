@@ -21,40 +21,42 @@ const rows = [
 
 export default function BasicTable() {
   return (
-    <div className="Table">
-      <TableContainer>
-        <Table sx={{ minWidth: 650 }} aria-label="simple table">
-          <TableHead>
-            <TableRow>
-              <TableCell align="left">Name</TableCell>
-              <TableCell align="left">Date</TableCell>
-              <TableCell align="left">Time</TableCell>
-              <TableCell align="left">Action</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody style={{ color: "white" }}>
-            {rows.map(row => (
-              <TableRow
-                key={row.name}
-                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-              >
-                <TableCell component="th" scope="row">
-                  {row.name}
-                </TableCell>
-                <TableCell align="left">{row.trackingId}</TableCell>
-                <TableCell align="left">{row.date}</TableCell>
-
-                <TableCell sx={{ maxWidth: 100 }} align="left">
-                  <div className="button-group">
-                    <button className="butt status approve">Approve</button>
-                    <button className="butt status reject">Reject</button>
-                  </div>
-                </TableCell>
+    <div>
+      <div className="Table">
+        <TableContainer>
+          <Table sx={{ minWidth: 650 }} aria-label="simple table">
+            <TableHead>
+              <TableRow>
+                <TableCell align="left">Name</TableCell>
+                <TableCell align="left">Date</TableCell>
+                <TableCell align="left">Time</TableCell>
+                <TableCell align="left">Action</TableCell>
               </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
+            </TableHead>
+            <TableBody style={{ color: "white" }}>
+              {rows.map(row => (
+                <TableRow
+                  key={row.name}
+                  sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+                >
+                  <TableCell component="th" scope="row">
+                    {row.name}
+                  </TableCell>
+                  <TableCell align="left">{row.trackingId}</TableCell>
+                  <TableCell align="left">{row.date}</TableCell>
+
+                  <TableCell sx={{ maxWidth: 100 }} align="left">
+                    <div className="button-group">
+                      <button className="butt status approve">Approve</button>
+                      <button className="butt status reject">Reject</button>
+                    </div>
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
+      </div>
     </div>
   );
 }
