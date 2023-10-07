@@ -5,7 +5,6 @@ import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
-import Paper from "@mui/material/Paper";
 import "./basictable.css";
 
 function createData(name, trackingId, date, status) {
@@ -17,17 +16,13 @@ const rows = [
   createData("Marcus Holloway", 18908424, "2 March 2022"),
   createData("Edward Kenway", 18908424, "2 March 2022"),
   createData("Ezio Auditore", 18908424, "2 March 2022"),
-  createData("Jason Brody", 18908424, "2 March 2022"),
   createData("Vaas Montenegro", 18908424, "2 March 2022"),
 ];
 
 export default function BasicTable() {
   return (
     <div className="Table">
-      <TableContainer
-        component={Paper}
-        style={{ boxShadow: "0px 13px 20px 0px #80808029" }}
-      >
+      <TableContainer>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
             <TableRow>
