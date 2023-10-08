@@ -118,4 +118,17 @@ body {
     box-shadow: none;
     padding: 2rem 0rem;
   }
+
+  .col {
+    font-size: small;
+    width: 80%;
+  }
+
+  .tab-icon {
+    font-size: small;
+  }
+
+  .tab {
+    padding: 0.5rem 1rem;
+  }
 }
