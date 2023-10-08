@@ -4,7 +4,7 @@ body {
 }
 
 .first {
-  padding: 2rem 2rem;
+  padding: 2rem 1rem;
   height: 100%;
   background-size: cover;
   background-color: #007bff;
@@ -21,11 +21,12 @@ body {
 }
 
 .content {
-  background-color: #f9f8f3;
+  /* background-color: #f9f8f3; */
+  background-color: white;
   min-height: calc(100vh - 7rem);
   padding: 1.5rem 2rem;
   border-radius: 16px;
-  box-shadow: 0px 0px 16px 16px #0021b6;
+  /* box-shadow: 0px 0px 16px 16px #0021b6; */
   box-shadow: #122fb0 0px 8px 24px;
 }
 
@@ -105,4 +106,29 @@ body {
 
 .tab {
   padding: 1rem 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .first {
+    padding: 0;
+  }
+
+  .content {
+    border-radius: 0;
+    box-shadow: none;
+    padding: 2rem 0rem;
+  }
+
+  .col {
+    font-size: small;
+    width: 80%;
+  }
+
+  .tab-icon {
+    font-size: small;
+  }
+
+  .tab {
+    padding: 0.5rem 1rem;
+  }
 }
